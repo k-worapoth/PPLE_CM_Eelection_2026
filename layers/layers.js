@@ -1,15 +1,14 @@
 var wms_layers = [];
 
 
-        var lyr_EsriTopographic_0 = new ol.layer.Tile({
-            'title': 'Esri Topographic',
-            'type':'base',
+        var lyr_GoogleSatelliteHybrid_0 = new ol.layer.Tile({
+            'title': 'Google Satellite Hybrid',
             'opacity': 1.000000,
             
             
             source: new ol.source.XYZ({
             attributions: ' ',
-                url: 'https://server.arcgisonline.com/arcgis/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}'
+                url: 'https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}'
             })
         });
 var format_tambon_CMMC_1 = new ol.format.GeoJSON();
@@ -183,7 +182,7 @@ var group_banner2025 = new ol.layer.Group({
                                 title: 'banner2025'});
 var group_banner2026 = new ol.layer.Group({
                                 layers: [],
-                                fold: 'open',
+                                fold: 'close',
                                 title: 'banner2026'});
 var group_POLITICALMAP = new ol.layer.Group({
                                 layers: [lyr_tambon_CMMC_1,lyr_moo_faham_2,lyr_moo_tambon_changpueak_3,lyr_moo_suthep_4,lyr_moo_sanpheseau_5,lyr_moo_padet_6,lyr_moo_maehia_7,],
@@ -191,11 +190,11 @@ var group_POLITICALMAP = new ol.layer.Group({
                                 title: 'POLITICALMAP'});
 var group_MP_CM1_2023 = new ol.layer.Group({
                                 layers: [],
-                                fold: 'open',
+                                fold: 'close',
                                 title: 'MP_CM1_2023'});
 
-lyr_EsriTopographic_0.setVisible(true);lyr_tambon_CMMC_1.setVisible(true);lyr_moo_faham_2.setVisible(true);lyr_moo_tambon_changpueak_3.setVisible(true);lyr_moo_suthep_4.setVisible(true);lyr_moo_sanpheseau_5.setVisible(true);lyr_moo_padet_6.setVisible(true);lyr_moo_maehia_7.setVisible(true);lyr_electionmap_templateV1_8.setVisible(true);lyr_Group_B_9.setVisible(true);lyr_Group_A_10.setVisible(true);
-var layersList = [lyr_EsriTopographic_0,group_POLITICALMAP,group_ELECTIONRESULT,group_EVENT];
+lyr_GoogleSatelliteHybrid_0.setVisible(true);lyr_tambon_CMMC_1.setVisible(true);lyr_moo_faham_2.setVisible(true);lyr_moo_tambon_changpueak_3.setVisible(true);lyr_moo_suthep_4.setVisible(true);lyr_moo_sanpheseau_5.setVisible(true);lyr_moo_padet_6.setVisible(true);lyr_moo_maehia_7.setVisible(true);lyr_electionmap_templateV1_8.setVisible(true);lyr_Group_B_9.setVisible(true);lyr_Group_A_10.setVisible(true);
+var layersList = [lyr_GoogleSatelliteHybrid_0,group_POLITICALMAP,group_ELECTIONRESULT,group_EVENT];
 lyr_tambon_CMMC_1.set('fieldAliases', {'id': 'id', 'Name': 'Name', 'population': 'population', 'tambon': 'tambon', 'area': 'area', });
 lyr_moo_faham_2.set('fieldAliases', {'id': 'id', 'Name': 'Name', 'moo': 'moo', 'population': 'population', 'tambon': 'tambon', 'area': 'area', });
 lyr_moo_tambon_changpueak_3.set('fieldAliases', {'id': 'id', 'Name': 'Name', 'moo': 'moo', 'population': 'population', 'tambon': 'tambon', 'area': 'area', });
@@ -219,9 +218,9 @@ lyr_Group_A_10.set('fieldImages', {'id': 'TextEdit', 'name': 'TextEdit', 'date':
 lyr_tambon_CMMC_1.set('fieldLabels', {'id': 'hidden field', 'Name': 'inline label - always visible', 'population': 'hidden field', 'tambon': 'hidden field', 'area': 'hidden field', });
 lyr_moo_faham_2.set('fieldLabels', {'id': 'hidden field', 'Name': 'inline label - always visible', 'moo': 'inline label - always visible', 'population': 'hidden field', 'tambon': 'hidden field', 'area': 'hidden field', });
 lyr_moo_tambon_changpueak_3.set('fieldLabels', {'id': 'hidden field', 'Name': 'inline label - always visible', 'moo': 'inline label - always visible', 'population': 'hidden field', 'tambon': 'hidden field', 'area': 'hidden field', });
-lyr_moo_suthep_4.set('fieldLabels', {'id': 'hidden field', 'Name': 'inline label - visible with data', 'moo': 'inline label - always visible', 'population': 'hidden field', 'tambon': 'hidden field', 'area': 'hidden field', });
+lyr_moo_suthep_4.set('fieldLabels', {'id': 'hidden field', 'Name': 'inline label - always visible', 'moo': 'inline label - always visible', 'population': 'hidden field', 'tambon': 'hidden field', 'area': 'hidden field', });
 lyr_moo_sanpheseau_5.set('fieldLabels', {'id': 'hidden field', 'Name': 'inline label - always visible', 'moo': 'inline label - always visible', 'population': 'hidden field', 'tambon': 'hidden field', 'area': 'hidden field', });
-lyr_moo_padet_6.set('fieldLabels', {'id': 'hidden field', 'name': 'inline label - always visible', 'moo': 'inline label - always visible', 'population': 'hidden field', 'tambon': 'hidden field', 'area': 'hidden field', });
+lyr_moo_padet_6.set('fieldLabels', {'id': 'hidden field', 'name': 'no label', 'moo': 'inline label - always visible', 'population': 'hidden field', 'tambon': 'hidden field', 'area': 'hidden field', });
 lyr_moo_maehia_7.set('fieldLabels', {'id': 'hidden field', 'Name': 'inline label - always visible', 'moo': 'inline label - always visible', 'population': 'hidden field', 'tambon': 'hidden field', 'area': 'hidden field', });
 lyr_electionmap_templateV1_8.set('fieldLabels', {'id': 'no label', 'Name': 'inline label - always visible', 'moo': 'inline label - always visible', 'population': 'no label', 'tambon': 'no label', 'area': 'no label', 'layer': 'no label', 'path': 'no label', 'tier': 'no label', });
 lyr_Group_B_9.set('fieldLabels', {'id': 'header label - visible with data', 'name': 'inline label - always visible', 'date': 'inline label - always visible', 'note': 'hidden field', });
