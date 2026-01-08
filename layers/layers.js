@@ -116,60 +116,42 @@ var lyr_moo_maehia_7 = new ol.layer.Vector({
                 interactive: true,
                 title: '<img src="styles/legend/moo_maehia_7.png" /> moo_maehia'
             });
-var format_electionmap_templateV1_8 = new ol.format.GeoJSON();
-var features_electionmap_templateV1_8 = format_electionmap_templateV1_8.readFeatures(json_electionmap_templateV1_8, 
+var format_Group_B_8 = new ol.format.GeoJSON();
+var features_Group_B_8 = format_Group_B_8.readFeatures(json_Group_B_8, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_electionmap_templateV1_8 = new ol.source.Vector({
+var jsonSource_Group_B_8 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_electionmap_templateV1_8.addFeatures(features_electionmap_templateV1_8);
-var lyr_electionmap_templateV1_8 = new ol.layer.Vector({
+jsonSource_Group_B_8.addFeatures(features_Group_B_8);
+var lyr_Group_B_8 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_electionmap_templateV1_8, 
-                style: style_electionmap_templateV1_8,
-                popuplayertitle: 'electionmap_templateV1',
-                interactive: false,
-    title: 'electionmap_templateV1<br />\
-    <img src="styles/legend/electionmap_templateV1_8_0.png" /> 1<br />\
-    <img src="styles/legend/electionmap_templateV1_8_1.png" /> 2<br />\
-    <img src="styles/legend/electionmap_templateV1_8_2.png" /> 3<br />\
-    <img src="styles/legend/electionmap_templateV1_8_3.png" /> 4<br />' });
-var format_Group_B_9 = new ol.format.GeoJSON();
-var features_Group_B_9 = format_Group_B_9.readFeatures(json_Group_B_9, 
-            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_Group_B_9 = new ol.source.Vector({
-    attributions: ' ',
-});
-jsonSource_Group_B_9.addFeatures(features_Group_B_9);
-var lyr_Group_B_9 = new ol.layer.Vector({
-                declutter: false,
-                source:jsonSource_Group_B_9, 
-                style: style_Group_B_9,
+                source:jsonSource_Group_B_8, 
+                style: style_Group_B_8,
                 popuplayertitle: 'Group_B',
                 interactive: true,
-                title: '<img src="styles/legend/Group_B_9.png" /> Group_B'
+                title: '<img src="styles/legend/Group_B_8.png" /> Group_B'
             });
-var format_Group_A_10 = new ol.format.GeoJSON();
-var features_Group_A_10 = format_Group_A_10.readFeatures(json_Group_A_10, 
+var format_Group_A_9 = new ol.format.GeoJSON();
+var features_Group_A_9 = format_Group_A_9.readFeatures(json_Group_A_9, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_Group_A_10 = new ol.source.Vector({
+var jsonSource_Group_A_9 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_Group_A_10.addFeatures(features_Group_A_10);
-var lyr_Group_A_10 = new ol.layer.Vector({
+jsonSource_Group_A_9.addFeatures(features_Group_A_9);
+var lyr_Group_A_9 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_Group_A_10, 
-                style: style_Group_A_10,
+                source:jsonSource_Group_A_9, 
+                style: style_Group_A_9,
                 popuplayertitle: 'Group_A',
                 interactive: true,
-                title: '<img src="styles/legend/Group_A_10.png" /> Group_A'
+                title: '<img src="styles/legend/Group_A_9.png" /> Group_A'
             });
 var group_EVENT = new ol.layer.Group({
-                                layers: [lyr_Group_B_9,lyr_Group_A_10,],
+                                layers: [lyr_Group_B_8,lyr_Group_A_9,],
                                 fold: 'open',
                                 title: 'EVENT'});
 var group_ELECTIONRESULT = new ol.layer.Group({
-                                layers: [lyr_electionmap_templateV1_8,],
+                                layers: [],
                                 fold: 'open',
                                 title: 'ELECTIONRESULT'});
 var group_CMMC2025 = new ol.layer.Group({
@@ -182,7 +164,7 @@ var group_banner2025 = new ol.layer.Group({
                                 title: 'banner2025'});
 var group_banner2026 = new ol.layer.Group({
                                 layers: [],
-                                fold: 'close',
+                                fold: 'open',
                                 title: 'banner2026'});
 var group_POLITICALMAP = new ol.layer.Group({
                                 layers: [lyr_tambon_CMMC_1,lyr_moo_faham_2,lyr_moo_tambon_changpueak_3,lyr_moo_suthep_4,lyr_moo_sanpheseau_5,lyr_moo_padet_6,lyr_moo_maehia_7,],
@@ -193,8 +175,8 @@ var group_MP_CM1_2023 = new ol.layer.Group({
                                 fold: 'close',
                                 title: 'MP_CM1_2023'});
 
-lyr_GoogleSatelliteHybrid_0.setVisible(true);lyr_tambon_CMMC_1.setVisible(true);lyr_moo_faham_2.setVisible(true);lyr_moo_tambon_changpueak_3.setVisible(true);lyr_moo_suthep_4.setVisible(true);lyr_moo_sanpheseau_5.setVisible(true);lyr_moo_padet_6.setVisible(true);lyr_moo_maehia_7.setVisible(true);lyr_electionmap_templateV1_8.setVisible(true);lyr_Group_B_9.setVisible(true);lyr_Group_A_10.setVisible(true);
-var layersList = [lyr_GoogleSatelliteHybrid_0,group_POLITICALMAP,group_ELECTIONRESULT,group_EVENT];
+lyr_GoogleSatelliteHybrid_0.setVisible(true);lyr_tambon_CMMC_1.setVisible(true);lyr_moo_faham_2.setVisible(true);lyr_moo_tambon_changpueak_3.setVisible(true);lyr_moo_suthep_4.setVisible(true);lyr_moo_sanpheseau_5.setVisible(true);lyr_moo_padet_6.setVisible(true);lyr_moo_maehia_7.setVisible(true);lyr_Group_B_8.setVisible(true);lyr_Group_A_9.setVisible(true);
+var layersList = [lyr_GoogleSatelliteHybrid_0,group_POLITICALMAP,group_EVENT];
 lyr_tambon_CMMC_1.set('fieldAliases', {'id': 'id', 'Name': 'Name', 'population': 'population', 'tambon': 'tambon', 'area': 'area', });
 lyr_moo_faham_2.set('fieldAliases', {'id': 'id', 'Name': 'Name', 'moo': 'moo', 'population': 'population', 'tambon': 'tambon', 'area': 'area', });
 lyr_moo_tambon_changpueak_3.set('fieldAliases', {'id': 'id', 'Name': 'Name', 'moo': 'moo', 'population': 'population', 'tambon': 'tambon', 'area': 'area', });
@@ -202,9 +184,8 @@ lyr_moo_suthep_4.set('fieldAliases', {'id': 'id', 'Name': 'Name', 'moo': 'moo', 
 lyr_moo_sanpheseau_5.set('fieldAliases', {'id': 'id', 'Name': 'Name', 'moo': 'moo', 'population': 'population', 'tambon': 'tambon', 'area': 'area', });
 lyr_moo_padet_6.set('fieldAliases', {'id': 'id', 'name': 'name', 'moo': 'moo', 'population': 'population', 'tambon': 'tambon', 'area': 'area', });
 lyr_moo_maehia_7.set('fieldAliases', {'id': 'id', 'Name': 'Name', 'moo': 'moo', 'population': 'population', 'tambon': 'tambon', 'area': 'area', });
-lyr_electionmap_templateV1_8.set('fieldAliases', {'id': 'id', 'Name': 'Name', 'moo': 'moo', 'population': 'population', 'tambon': 'tambon', 'area': 'area', 'layer': 'layer', 'path': 'path', 'tier': 'tier', });
-lyr_Group_B_9.set('fieldAliases', {'id': 'id', 'name': 'name', 'date': 'date', 'note': 'note', });
-lyr_Group_A_10.set('fieldAliases', {'id': 'id', 'name': 'name', 'date': 'date', 'note': 'note', });
+lyr_Group_B_8.set('fieldAliases', {'id': 'id', 'name': 'name', 'date': 'date', 'note': 'note', });
+lyr_Group_A_9.set('fieldAliases', {'id': 'id', 'name': 'name', 'date': 'date', 'note': 'note', });
 lyr_tambon_CMMC_1.set('fieldImages', {'id': 'TextEdit', 'Name': 'TextEdit', 'population': 'TextEdit', 'tambon': 'TextEdit', 'area': 'TextEdit', });
 lyr_moo_faham_2.set('fieldImages', {'id': 'TextEdit', 'Name': 'TextEdit', 'moo': 'TextEdit', 'population': 'TextEdit', 'tambon': 'TextEdit', 'area': 'TextEdit', });
 lyr_moo_tambon_changpueak_3.set('fieldImages', {'id': 'TextEdit', 'Name': 'TextEdit', 'moo': 'TextEdit', 'population': 'TextEdit', 'tambon': 'TextEdit', 'area': 'TextEdit', });
@@ -212,9 +193,8 @@ lyr_moo_suthep_4.set('fieldImages', {'id': 'TextEdit', 'Name': 'TextEdit', 'moo'
 lyr_moo_sanpheseau_5.set('fieldImages', {'id': 'TextEdit', 'Name': 'TextEdit', 'moo': 'TextEdit', 'population': 'TextEdit', 'tambon': 'TextEdit', 'area': 'TextEdit', });
 lyr_moo_padet_6.set('fieldImages', {'id': 'TextEdit', 'name': 'TextEdit', 'moo': 'TextEdit', 'population': 'TextEdit', 'tambon': 'TextEdit', 'area': 'TextEdit', });
 lyr_moo_maehia_7.set('fieldImages', {'id': 'TextEdit', 'Name': 'TextEdit', 'moo': 'TextEdit', 'population': 'TextEdit', 'tambon': 'TextEdit', 'area': 'TextEdit', });
-lyr_electionmap_templateV1_8.set('fieldImages', {'id': 'TextEdit', 'Name': 'TextEdit', 'moo': 'TextEdit', 'population': 'TextEdit', 'tambon': 'TextEdit', 'area': 'TextEdit', 'layer': 'TextEdit', 'path': 'TextEdit', 'tier': 'Range', });
-lyr_Group_B_9.set('fieldImages', {'id': 'TextEdit', 'name': 'TextEdit', 'date': 'DateTime', 'note': 'DateTime', });
-lyr_Group_A_10.set('fieldImages', {'id': 'TextEdit', 'name': 'TextEdit', 'date': 'DateTime', 'note': 'TextEdit', });
+lyr_Group_B_8.set('fieldImages', {'id': 'TextEdit', 'name': 'TextEdit', 'date': 'DateTime', 'note': 'DateTime', });
+lyr_Group_A_9.set('fieldImages', {'id': 'TextEdit', 'name': 'TextEdit', 'date': 'DateTime', 'note': 'TextEdit', });
 lyr_tambon_CMMC_1.set('fieldLabels', {'id': 'hidden field', 'Name': 'inline label - always visible', 'population': 'hidden field', 'tambon': 'hidden field', 'area': 'hidden field', });
 lyr_moo_faham_2.set('fieldLabels', {'id': 'hidden field', 'Name': 'inline label - always visible', 'moo': 'inline label - always visible', 'population': 'hidden field', 'tambon': 'hidden field', 'area': 'hidden field', });
 lyr_moo_tambon_changpueak_3.set('fieldLabels', {'id': 'hidden field', 'Name': 'inline label - always visible', 'moo': 'inline label - always visible', 'population': 'hidden field', 'tambon': 'hidden field', 'area': 'hidden field', });
@@ -222,9 +202,8 @@ lyr_moo_suthep_4.set('fieldLabels', {'id': 'hidden field', 'Name': 'inline label
 lyr_moo_sanpheseau_5.set('fieldLabels', {'id': 'hidden field', 'Name': 'inline label - always visible', 'moo': 'inline label - always visible', 'population': 'hidden field', 'tambon': 'hidden field', 'area': 'hidden field', });
 lyr_moo_padet_6.set('fieldLabels', {'id': 'hidden field', 'name': 'no label', 'moo': 'inline label - always visible', 'population': 'hidden field', 'tambon': 'hidden field', 'area': 'hidden field', });
 lyr_moo_maehia_7.set('fieldLabels', {'id': 'hidden field', 'Name': 'inline label - always visible', 'moo': 'inline label - always visible', 'population': 'hidden field', 'tambon': 'hidden field', 'area': 'hidden field', });
-lyr_electionmap_templateV1_8.set('fieldLabels', {'id': 'no label', 'Name': 'inline label - always visible', 'moo': 'inline label - always visible', 'population': 'no label', 'tambon': 'no label', 'area': 'no label', 'layer': 'no label', 'path': 'no label', 'tier': 'no label', });
-lyr_Group_B_9.set('fieldLabels', {'id': 'header label - visible with data', 'name': 'inline label - always visible', 'date': 'inline label - always visible', 'note': 'hidden field', });
-lyr_Group_A_10.set('fieldLabels', {'id': 'hidden field', 'name': 'inline label - always visible', 'date': 'inline label - always visible', 'note': 'hidden field', });
-lyr_Group_A_10.on('precompose', function(evt) {
+lyr_Group_B_8.set('fieldLabels', {'id': 'header label - visible with data', 'name': 'inline label - always visible', 'date': 'inline label - always visible', 'note': 'hidden field', });
+lyr_Group_A_9.set('fieldLabels', {'id': 'hidden field', 'name': 'inline label - always visible', 'date': 'inline label - always visible', 'note': 'hidden field', });
+lyr_Group_A_9.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
