@@ -65,38 +65,10 @@ var lyr_Group_A_3 = new ol.layer.Vector({
                 interactive: true,
                 title: '<img src="styles/legend/Group_A_3.png" /> Group_A'
             });
-var group_mao = new ol.layer.Group({
-                                layers: [],
-                                fold: 'open',
-                                title: 'mao'});
 var group_EVENT = new ol.layer.Group({
                                 layers: [lyr_postalfinal_1,lyr_Group_B_2,lyr_Group_A_3,],
                                 fold: 'open',
                                 title: 'EVENT'});
-var group_ELECTIONRESULT = new ol.layer.Group({
-                                layers: [],
-                                fold: 'open',
-                                title: 'ELECTIONRESULT'});
-var group_CMMC2025 = new ol.layer.Group({
-                                layers: [],
-                                fold: 'close',
-                                title: 'CMMC2025'});
-var group_banner2025 = new ol.layer.Group({
-                                layers: [],
-                                fold: 'close',
-                                title: 'banner2025'});
-var group_banner2026 = new ol.layer.Group({
-                                layers: [],
-                                fold: 'open',
-                                title: 'banner2026'});
-var group_POLITICALMAP = new ol.layer.Group({
-                                layers: [],
-                                fold: 'open',
-                                title: 'POLITICALMAP'});
-var group_MP_CM1_2023 = new ol.layer.Group({
-                                layers: [],
-                                fold: 'close',
-                                title: 'MP_CM1_2023'});
 
 lyr_GoogleSatelliteHybrid_0.setVisible(true);lyr_postalfinal_1.setVisible(true);lyr_Group_B_2.setVisible(true);lyr_Group_A_3.setVisible(true);
 var layersList = [lyr_GoogleSatelliteHybrid_0,group_EVENT];
